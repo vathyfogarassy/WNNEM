@@ -1,7 +1,7 @@
 # WNNEM
 Weighted Nearest Neighbours Control Group Selection with Error Minimization.
 
-The WNNEM method is a multivariate weighted nearest neighbours-based control group selection method, which aims to eliminate of disadvantages of propensity score matching method in cases of few descriptive covariates. The WNNEM method performs better when individuals are characterized by fewer covariates, and the search space is such small that there exist many individuals for selecting as control which are the most similar pairs of more than one case (treated) subject.
+The WNNEM method is a multivariate weighted nearest neighbours-based control group selection method, which aims to eliminate of disadvantages of propensity score matching (PSM) method in cases of few descriptive covariates. The WNNEM method performs better when individuals are characterized by fewer covariates, and the search space is such small that there exist many individuals for selecting as control which are the most similar pairs of more than one case (treated) subject.
 
 WNNEM method pairs the elements of the case and control groups in the original vector space of the covariates and the dissimilarities of the individuals are calculated as the weighted distances of the subjects. The weight factors are derived from a logistic regression model fitted on the status of treatment assignment.
 
@@ -27,8 +27,8 @@ In case of using the datasets or applying the WNNEM method, please cite the arti
   - *wnnem_pair*: index (\_id) of the matched pair resulted by the WNNEM method
   - *nn_euk_pair_numberoftrial*: index (\_id) of the matched pair resulted by the nearest neighbour method based on the Euclidean distances of the individuals
   - *nn_mah_pair_numberoftrial*: index (\_id) of the matched pair resulted by the Mahalanobis matching (nearest neighbour matching based on Mahalanobis distances) 
-  - *nn_psm_02_pair_numberoftrial*: index (\_id) of the matched pair resulted by the greedy 1:1 PSM (propensity score matching) method applying caliper size set as 0.2 of the standard deviation of the logit of the propensity scores.
-  - *nn_psm_dyn_numberoftrial*: index (\_id) of the matched pair resulted by the greedy 1:1 PSM (propensity score matching) method applying caliper size determined dynamically and set at the minimal value for which 1:1 matching can be performed.
+  - *nn_psm_02_pair_numberoftrial*: index (\_id) of the matched pair resulted by the greedy 1:1 PSM method applying caliper size set as 0.2 of the standard deviation of the logit of the propensity scores.
+  - *nn_psm_dyn_numberoftrial*: index (\_id) of the matched pair resulted by the greedy 1:1 PSM method applying caliper size determined dynamically and set at the minimal value for which 1:1 matching can be performed.
 - **Scripts**: 
   Contains the implemented python modules.
 - **example.py**:
