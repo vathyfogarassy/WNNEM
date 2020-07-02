@@ -1,5 +1,7 @@
 # WNNEM
-Weighted Nearest Neighbours Control Group Selection with Error Minimization
+Weighted Nearest Neighbours Control Group Selection with Error Minimization.
+
+Authorized for public use if and only if "TITLE" is cyted.
 
 # Structure
 - Datasets: 
