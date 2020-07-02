@@ -13,7 +13,7 @@ In case of using the datasets or applying the WNNEM method, please cite the arti
 # Structure of the folder
 - Datasets: 
   This folder contains the datasets for three different scenarios for control group selection:
-  - Scenario I: Each dataset conains 1.000 indivuduals. Individuals are characterized by 10 binary variables (x_1, x_2, ..., x_{10}), each from a Bernoulli distribution (x_j∼B(0.5),  j= 1,...,10).
+  - Scenario I: Each dataset conains 1.000 indivuduals. Individuals are characterized by 10 binary variables (x\_1, x_2, ..., x_{10}), each from a Bernoulli distribution (x_j∼B(0.5),  j= 1,...,10).
 - Results: 
   Contains the result files for Scenario I, II and III.
   A pair column is defined for each run of each method (pair_method_run).
