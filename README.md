@@ -11,7 +11,7 @@ In case of using the datasets or applying the WNNEM method, please cite the arti
 
 
 # Structure of the folder
-- Datasets: 
+- \*Datasets\*: 
   This folder contains the datasets for three different scenarios for control group selection. In each scenario 100 datasets are available.
   - Scenario I: Each dataset conains 1.000 indivuduals. Individuals are characterized by 10 binary variables (<img src="https://render.githubusercontent.com/render/math?math=x_1, x_2, ..., x_{10}">), each from a Bernoulli distribution (<img src="https://render.githubusercontent.com/render/math?math=x_j\sim\textrm{B}(0.5), \quad j=1,\dots,10">).
   - Scenario II: The second scenario models such studies in which fewer descriptive variables are available. In this scenario, each individual is characterized by 1 ordinal and 5 binary variables (<img src="https://render.githubusercontent.com/render/math?math=x_1, x_2, ..., x_6">). The ordinal variable (<img src="https://render.githubusercontent.com/render/math?math=x_1">) represents, for example, 5 age groups, while the binary variables (<img src="https://render.githubusercontent.com/render/math?math=x_2, x_3, ..., x_6">) may represent, for example, the gender of the subject or various diagnoses.  In this scenario, 700 individuals are simulated in each dataset, and the ratio of the candidate subjects to the treated individuals (case group) in the 100 datasets is between 2.0 and 3.1.
