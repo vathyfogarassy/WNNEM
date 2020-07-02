@@ -19,16 +19,16 @@ In case of using the datasets or applying the WNNEM method, please cite the arti
 - **Results**:
   Contains the result files for Scenario I, II and III.
   Each output contains the following attributes:
-  - *_id*:
-  - *x1, ..., xn*: 
-  - *treated*:
-  - *ps*:
-  - *ss_pair*:
-  - *wnnem_pair*:
-  - *nn_euk_pair_numberoftrial*:
-  - *nn_mah_pair_numberoftrial*:
-  - *nn_psm_02_pair_numberoftrial*:
-  - *nn_psm_dyn_numberoftrial*:
+  - *_id*: index of the individual
+  - *x1, ..., xn*: attributes (covariates) of the individulas
+  - *treated*: this attributevalue yields if individual is the member of the case group (treated=1) or it is an individual which can be selected into the control group ( treated=0)
+  - *ps*: propensity score value of the individual
+  - *ss_pair*: index (\_id) of the matched pair resulted by the stratified matching method  
+  - *wnnem_pair*: index (\_id) of the matched pair resulted by the WNNEM method
+  - *nn_euk_pair_numberoftrial*: index (\_id) of the matched pair resulted by the nearest neighbour method based on the Euclidean distances of the individuals
+  - *nn_mah_pair_numberoftrial*: index (\_id) of the matched pair resulted by the Mahalanobis matching (nearest neighbour matching based on Mahalanobis distances) 
+  - *nn_psm_02_pair_numberoftrial*: index (\_id) of the matched pair resulted by the greedy 1:1 PSM (propensity score matching) method applying caliper size set as 0.2 of the standard deviation of the logit of the propensity scores.
+  - *nn_psm_dyn_numberoftrial*: index (\_id) of the matched pair resulted by the greedy 1:1 PSM (propensity score matching) method applying caliper size determined dynamically and set at the minimal value for which 1:1 matching can be performed.
 - **Scripts**: 
   Contains the implemented python modules.
 - **example.py**:
