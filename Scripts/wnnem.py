@@ -3,7 +3,20 @@ __copyright__ = "Copyright (C) 2019 Szabolcs Szekér"
 __license__ = "Public Domain"
 __version__ = "0.5"
 
+"""
+Weighted Nearest Neighbours Control Group Selection with Error Minimization.
 
+The WNNEM method is a multivariate weighted nearest neighbours-based control group selection method. 
+WNNEM method pairs the elements of the case and control groups in the original vector space of the covariates 
+and the dissimilarities of the individuals are calculated as the weighted distances of the subjects. 
+The weight factors are derived from a logistic regression model fitted on the status of treatment assignment.
+
+The WNNEM method is published in ...
+
+In case of using the datasets or applying the WNNEM method, please cite the article above.
+
+
+"""
 # %%
 
 import numpy as np
