@@ -6,6 +6,21 @@ __version__ = "0.5"
 """
 This module contains the methods used to evaluate case-control group pairs.
 
+DDI:
+    Distribution Dissimilarity Index (DDI) is a distribution-based measure
+    and is based on the histogram disparities of the case-control groups.
+NNI:
+    Nearest Neighbour Index (NNI). NNI measures whether the
+    paired elements are the closest to each other in every dimension.
+    The main drawback of NNI is that it does not consider 
+    the distance between case-control entity pairs.
+GDI:
+    The Global Dissimilarity Index (GDI) is meant to mend the weakness of NNI.
+Individual balance:
+    Individual balance values are calculated by TableOne.
+SMD:
+    Standardized Mean Difference (SMD). For more details, see the SMD function.
+
 You can find more details on DDI, NNI and GDI in the article below.
 S. Szekér and Á. Vathy-Fogarassy,
 How Can the Similarity of the Case and Control Groups be Measured in Case-Control Studies?
