@@ -17,6 +17,12 @@ In case of using the datasets or applying the WNNEM method, please cite the arti
   - *Scenario II*: The second scenario models such studies in which fewer descriptive variables are available. In this scenario, each individual is characterized by 1 ordinal and 5 binary variables (<img src="https://render.githubusercontent.com/render/math?math=x_1, x_2, ..., x_6">). The ordinal variable (<img src="https://render.githubusercontent.com/render/math?math=x_1">) represents, for example, 5 age groups, while the binary variables (<img src="https://render.githubusercontent.com/render/math?math=x_2, x_3, ..., x_6">) may represent, for example, the gender of the subject or various diagnoses.  In this scenario, 700 individuals are simulated in each dataset, and the ratio of the candidate subjects to the treated individuals (case group) in the 100 datasets is between 2.0 and 3.1.
   - *Scenario III*: The third scenario is similar to the second one regarding the attributes of individuals and the total number of subjects in each dataset. However, it simulates a more difficult control group selection problem. Although each dataset still contained 700 individuals, the number of treated individuals (case group) in the case of the third scenario is higher than in the second one. While in scenario II, the size of the treated group varies between 24.5 and 33.0 percent of the dataset, in the case of the third scenario, it is between 31.7 and 40.7 percent (the ratio of the candidate subjects to the treated individuals is between 1.5 and 2.2).
 
+  *Attributes*:
+  - *_id*: index of the individual
+  - *x1, ..., xn*: attributes (covariates) of the individulas
+  - *treated*: this attributevalue yields if individual is the member of the case group (treated=1) or it is an individual which can be selected into the control group ( treated=0)
+  - *ps*: propensity score value of the individual
+  
   More details of the scenarios are given in the article.
 
 - **Results**:
