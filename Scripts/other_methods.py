@@ -1,3 +1,10 @@
+__author__ = "Szabolcs Szekér <szeker@dcs.uni-pannon.hu>"
+__copyright__ = "Copyright (C) 2019 Szabolcs Szekér"
+__license__ = "Public Domain"
+__version__ = "0.5"
+
+# %%
+
 import numpy as np
 import scipy.spatial.distance as sc
 import random
