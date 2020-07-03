@@ -1,6 +1,12 @@
 __author__ = "Szabolcs Szekér <szeker@dcs.uni-pannon.hu>"
 __version__ = "1.0"
 
+"""
+The WNNEM method is published in ...
+
+In case of using the datasets or applying the WNNEM method, please cite the article above.
+"""
+
 # %%
 
 import sys
@@ -153,8 +159,6 @@ test['nn_SMD'] = dissim.calculate_SMD(tmp, 'treated', ovar)
 
 test['psm_diff'] = abs(test['psm_SMD'] - test['bef_SMD'])
 test['wnnem_diff'] = abs(test['wnnem_SMD'] - test['bef_SMD'])
-
-#test['method_diff'] = test['psm_diff'] - test['wnnem_diff']
 
 print(test)
 

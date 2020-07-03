@@ -3,6 +3,15 @@ __copyright__ = "Copyright (C) 2019 Szabolcs Szekér"
 __license__ = "Public Domain"
 __version__ = "0.5"
 
+"""
+This module contains the methods used to evaluate case-control group pairs.
+
+You can find more details on DDI, NNI and GDI in the article below.
+S. Szekér and Á. Vathy-Fogarassy,
+How Can the Similarity of the Case and Control Groups be Measured in Case-Control Studies?
+2019 IEEE International Work Conference on Bioinspired Intelligence (IWOBI), Budapest, Hungary, 2019, pp. 000033-000040
+doi: 10.1109/IWOBI47054.2019.9114390.
+"""
 
 # %%
 
