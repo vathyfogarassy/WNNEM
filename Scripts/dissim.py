@@ -16,6 +16,9 @@ NNI:
     the distance between case-control entity pairs.
 GDI:
     The Global Dissimilarity Index (GDI) is meant to mend the weakness of NNI.
+    The GDI not only identifies whether the method used found 
+    the identical value or the nearest neighbour along the examined dimension,
+    but it also measures the magnitude of difference between the values of each dimension of the paired individuals.
 Individual balance:
     Individual balance values are calculated by TableOne.
 SMD:
@@ -24,7 +27,7 @@ SMD:
 You can find more details on DDI, NNI and GDI in the article below.
 S. Szekér and Á. Vathy-Fogarassy,
 How Can the Similarity of the Case and Control Groups be Measured in Case-Control Studies?
-2019 IEEE International Work Conference on Bioinspired Intelligence (IWOBI), Budapest, Hungary, 2019, pp. 000033-000040
+2019 IEEE International Work Conference on Bioinspired Intelligence (IWOBI), Budapest, Hungary, 2019, pp. 33-40.
 doi: 10.1109/IWOBI47054.2019.9114390.
 """
 
