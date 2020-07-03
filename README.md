@@ -36,8 +36,8 @@ In case of using the datasets or applying the WNNEM method, please cite the arti
   - *wnnem_pair*: index (*\_id*) of the matched pair resulted by the WNNEM method
   - *nn_euk_pair_numberoftrial*: index (*\_id*) of the matched pair resulted by the nearest neighbour method based on the Euclidean distances of the individuals
   - *nn_mah_pair_numberoftrial*: index (*\_id*) of the matched pair resulted by the Mahalanobis matching (nearest neighbour matching based on Mahalanobis distances) 
-  - *nn_psm_02_pair_numberoftrial*: index (*\_id*) of the matched pair resulted by the greedy 1:1 PSM method applying caliper size set as 0.2 of the standard deviation of the logit of the propensity scores.
-  - *nn_psm_dyn_numberoftrial*: index (*\_id*) of the matched pair resulted by the greedy 1:1 PSM method applying caliper size determined dynamically and set at the minimal value for which 1:1 matching can be performed.
+  - *psm_02_pair_numberoftrial*: index (*\_id*) of the matched pair resulted by the greedy 1:1 PSM method applying caliper size set as 0.2 of the standard deviation of the logit of the propensity scores.
+  - *psm_dyn_numberoftrial*: index (*\_id*) of the matched pair resulted by the greedy 1:1 PSM method applying caliper size determined dynamically and set at the minimal value for which 1:1 matching can be performed.
 - **Scripts**: 
   Contains the implemented python modules.
   - *wnnem.py*: ...
