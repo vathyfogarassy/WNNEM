@@ -20,7 +20,7 @@ In case of using the datasets or applying the WNNEM method, please cite the arti
   *Attributes*:
   - *_id*: index of the individual
   - *x1, ..., xn*: attributes (covariates) of the individulas
-  - *treated*: this attributevalue yields if individual is the member of the case group (*treated=1*) or it is an individual which can be selected into the control group (*treated=0*)
+  - *treated*: this attribute-value indicates if an individual is the member of the case group (*treated=1*) or it is an individual which can be selected into the control group (*treated=0*)
   - *ps*: propensity score value of the individual
   
   More details of the scenarios are given in the article.
@@ -30,7 +30,7 @@ In case of using the datasets or applying the WNNEM method, please cite the arti
   Each output contains the following attributes:
   - *_id*: index of the individual
   - *x1, ..., xn*: attributes (covariates) of the individulas
-  - *treated*: this attributevalue yields if individual is the member of the case group (*treated=1*) or it is an individual which can be selected into the control group (*treated=0*)
+  - *treated*: this attribute-value indicates if an individual is the member of the case group (*treated=1*) or it is an individual which can be selected into the control group (*treated=0*)
   - *ps*: propensity score value of the individual
   - *ss_pair*: index (*\_id*) of the matched pair resulted by the stratified matching method  
   - *wnnem_pair*: index (*\_id*) of the matched pair resulted by the WNNEM method
