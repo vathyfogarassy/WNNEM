@@ -2,14 +2,22 @@ __author__ = "Szabolcs Szekér <szeker@dcs.uni-pannon.hu>"
 __version__ = "1.0"
 
 """
-This file is presented as an example sript to:
-- import the datastes,
-- run the different control group selected methods
-- and to evaluate the similarity of the selected control group to the case group.
-
+In this file, an example is presented to:
+- import the datasets,
+- run the different control group selection methods 
+  (greedy 1:1 PSM with two types of setting the calliper size, nearest neighbour matching, Mahalanobis matching, stratified matching and WNNEM method),
+- to evaluate the similarity of the selected control group to the case group 
+  (individual balance, SMD, DDI, NNI, GDI).
+  
 The WNNEM method is published in ...
 
 In case of using the datasets or applying the WNNEM method, please cite the article above.
+
+For more details in DDI, NNI and GDI indexes please see:
+S. Szekér and Á. Vathy-Fogarassy,
+How Can the Similarity of the Case and Control Groups be Measured in Case-Control Studies?
+2019 IEEE International Work Conference on Bioinspired Intelligence (IWOBI), Budapest, Hungary, 2019, pp. 33-40.
+doi: 10.1109/IWOBI47054.2019.9114390.
 """
 
 # %%
