@@ -4,13 +4,14 @@ __version__ = "1.0"
 # %%
 
 import sys
-sys.path.insert(1, 'modules')
+sys.path.insert(1, 'Scripts')
 
 import warnings
 import numpy as np
 import pandas as pd
 import wnnem
 import psm
+import other_methods as om
 import dissim
 import time
 import datetime
@@ -123,10 +124,10 @@ print('Control group by PSM: {} ({:.2f}%)'.format(len(psm_control), len(psm_cont
 wnnem_control = wnnem.match(treated, untreated, ovar, r_weights, pair_name='wnnem_pair')
 print('Control group by WNNEM: {} ({:.2f}%)'.format(len(wnnem_control), len(wnnem_control) / len(treated) * 100))
 
-ss_control = wnnem.SS(treated, untreated, ovar, pair_name='ss_pair')
+ss_control = om.SS(treated, untreated, ovar, pair_name='ss_pair')
 print('Control group by SS: {} ({:.2f}%)'.format(len(ss_control), len(ss_control) / len(treated) * 100))
 
-nn_control = wnnem.NN(treated, untreated, ovar, pair_name='nn_pair', dist='mahalanobis')
+nn_control = om.NN(treated, untreated, ovar, pair_name='nn_pair', dist='mahalanobis')
 print('Control group by NN: {} ({:.2f}%)'.format(len(nn_control), len(nn_control) / len(treated) * 100))
 
 categorical = ovar
