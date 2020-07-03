@@ -2,6 +2,11 @@ __author__ = "Szabolcs Szekér <szeker@dcs.uni-pannon.hu>"
 __version__ = "1.0"
 
 """
+This file is presented as an example sript to:
+- import the datastes,
+- run the different control group selected methods
+- and to evaluate the similarity of the selected control group to the case group.
+
 The WNNEM method is published in ...
 
 In case of using the datasets or applying the WNNEM method, please cite the article above.
