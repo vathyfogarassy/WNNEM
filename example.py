@@ -72,10 +72,13 @@ def create_output_file(case, population, ovar, col_list, write_to_file = True):
 
 
 # %%
-  
+
+# N is the number of records or patients (rows) 
 M = 1000
+# M is the number of attributes or observerd variables (columns)
 N = 10
 
+# index is the name of the index column
 index = '_id'
 
 X = pd.read_csv('Datasets/example_dataset_scenarioI.csv', sep=';', decimal=',', encoding='utf-8')
