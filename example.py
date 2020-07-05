@@ -86,7 +86,8 @@ X.set_index(index, inplace=True)
 
 ovar = [x for x in list(X) if 'x' in x]
 X, r_weights = psm.calculate_ps(X, 'treated', ovar)
-treated, untreated = separate_groups(X, 'treated')
+treated = X[X['treated'] == 1]
+untreated = X[X['treated'] == 0]
 
 print('Case group: {} (No. treated)'.format(len(treated)))
 print('Population: {} (No. untreated)'.format(len(untreated)))
@@ -97,7 +98,7 @@ print('Control group by PSM: {} ({:.2f}%)'.format(len(psm_control), len(psm_cont
 wnnem_control = wnnem.match(treated, untreated, ovar, r_weights, pair_name='wnnem_pair', index='_id')
 print('Control group by WNNEM: {} ({:.2f}%)'.format(len(wnnem_control), len(wnnem_control) / len(treated) * 100))
 
-ss_control = om.SS(treated, untreated, ovar, pair_name='ss_pair')
+ss_control = om.SM(treated, untreated, ovar, pair_name='ss_pair')
 print('Control group by SS: {} ({:.2f}%)'.format(len(ss_control), len(ss_control) / len(treated) * 100))
 
 nn_control = om.NN(treated, untreated, ovar, pair_name='nn_pair', dist='mahalanobis', index='_id')

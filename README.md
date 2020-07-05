@@ -42,7 +42,7 @@ In case of using the datasets or applying the WNNEM method, please cite the arti
   Contains the implemented python modules.
   - *wnnem.py*: Contains the implementation of Weighted Nearest Neighbours Control Group Selection with Error Minimization (WNNEM).
   - *psm.py*: Contains the implementation of the greedy 1:1 propensity score matching.
-  - *other_methods.py*:
-  - *dissim.py*: Contains the calculation of similarity measures quantifying the similarity of the case and control groups.
+  - *other_methods.py*: Contains the implementaion of stratified matching (SM), nearest neighbour matching (NNM) and mahalanobis metric matching (MMM). 
+  - *dissim.py*: Contains the scripts calculating the similarity measures quantifying the similarity of case and control group pairs.
 - **example.py**:
   An example code on the usage of the uploaded scripts.

@@ -17,9 +17,9 @@ def convert(row):
 
 # %%
 
-def SS(case, population, ovar, **kwargs):
+def SM(case, population, ovar, **kwargs):
     """
-    SS(case, population, ovar, **kwargs)
+    SM(case, population, ovar, **kwargs)
 
     Pairs individuals of case and population.
     
