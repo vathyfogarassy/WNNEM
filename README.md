@@ -40,8 +40,8 @@ In case of using the datasets or applying the WNNEM method, please cite the arti
 
 - **Scripts**: 
   Contains the implemented python modules.
-  - *wnnem.py*: ...
-  - *psm.py*: ...
-  - *dissim.py*: ...
+  - *wnnem.py*: Containt the implementation of Weighted Nearest Neighbours Control Group Selection with Error Minimization.
+  - *psm.py*: Contains the implementation of the greedy 1:1 propensity score matching.
+  - *dissim.py*: Contains the implementation of our proposed methods, individual balances and standardized mean difference.
 - **example.py**:
   An example code on the usage of the uploaded scripts.
