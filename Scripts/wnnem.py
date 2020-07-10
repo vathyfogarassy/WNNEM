@@ -11,7 +11,9 @@ WNNEM method pairs the elements of the case and control groups in the original v
 and the dissimilarities of the individuals are calculated as the weighted distances of the subjects. 
 The weight factors are derived from a logistic regression model fitted on the status of treatment assignment.
 
-The WNNEM method is published in ...
+The WNNEM method will be published in the following article:
+
+Szabolcs SZEKÉR, Ágnes VATHY-FOGARASSY. Weighted nearest neighbours-based control group selection method for observational studies. PLOS ONE (accepted, publication in process)
 
 In case of using the datasets or applying the WNNEM method, please cite the article above.
 
