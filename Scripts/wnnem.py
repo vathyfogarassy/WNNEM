@@ -13,7 +13,8 @@ The weight factors are derived from a logistic regression model fitted on the st
 
 The WNNEM method will be published in the following article:
 
-Szabolcs SZEKÉR, Ágnes VATHY-FOGARASSY. Weighted nearest neighbours-based control group selection method for observational studies. PLOS ONE (accepted, publication in process)
+Szekér S, Vathy-Fogarassy Á (2020) Weighted nearest neighbours-based control group selection method for observational studies. PLOS ONE 15(7): e0236531. 
+https://doi.org/10.1371/journal.pone.0236531
 
 In case of using the datasets or applying the WNNEM method, please cite the article above.
 
